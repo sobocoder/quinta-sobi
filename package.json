@@ -1,9 +1,0 @@
-{
-  "name": "reservas-quinta",
-  "private": true,
-  "description": "Calendario de reservas de la quinta (Netlify + Netlify Blobs)",
-  "type": "module",
-  "dependencies": {
-    "@netlify/blobs": "^11.1.7"
-  }
-}
