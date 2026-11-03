@@ -1,19 +1,19 @@
 # Reservas de la Quinta (versión web para Netlify)
 
 Calendario compartido para reservar la quinta entre Juli, Nacho, Gus, Lore, Patri, Nico, Caro y Belu.
-La página está en `public/`. Las reservas las guarda una función de Netlify en Netlify Blobs.
+La página es `index.html`, en la raíz. Las reservas las guarda una función de Netlify en Netlify Blobs.
 Entra todo en el plan gratis.
 
 No pide clave: cualquiera que tenga el link puede ver y editar las reservas. Compartilo solo con la familia.
 
 ## Qué hay en la carpeta
 
-- `public/index.html`: la página.
+- `index.html`: la página.
 - `netlify/functions/reservas.mjs`: el servidor. Lee, guarda y borra reservas.
 - `netlify/functions/foto.mjs`: entrega la foto de fondo.
 - `netlify/datos/foto.mjs`: la foto, guardada dentro del proyecto.
 - `herramientas/cambiar-foto.mjs`: para cambiar la foto de fondo.
-- `netlify.toml`: le dice a Netlify qué publicar (la carpeta `public`) y qué versión de Node usar.
+- `netlify.toml`: le dice a Netlify qué publicar (la raíz del repo) y qué versión de Node usar.
 - `package.json`: la única dependencia (`@netlify/blobs`).
 
 ## Publicarla con GitHub
@@ -40,7 +40,7 @@ La primera vez te pregunta si querés crear un proyecto nuevo: decí que sí.
 
 ## Cambiar nombres o colores
 
-Están en la lista `FAMILIA`, al principio del script de `public/index.html`.
+Están en la lista `FAMILIA`, al principio del script de `index.html`.
 Si agregás o cambiás a alguien, actualizá también la lista `FAMILIA` de `netlify/functions/reservas.mjs`, con los mismos `id`.
 
 ## Cambiar la foto de fondo

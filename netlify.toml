@@ -1,6 +1,6 @@
 [build]
-  # La página está en public/. No hace falta comando de build.
-  publish = "public"
+  # La página es el index.html de la raíz del repo. No hace falta comando de build.
+  publish = "."
 
 [build.environment]
   # @netlify/blobs necesita Node 22 o más nuevo.
